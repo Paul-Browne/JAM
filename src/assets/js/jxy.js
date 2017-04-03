@@ -91,6 +91,7 @@ function scriptCheck(){
 }
 
 
+
 function scriptAdd(youarell){
     var addScripts = document.querySelectorAll("script:not(.accounted)");
     addScripts.forEach(function(element) {
