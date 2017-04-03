@@ -52,23 +52,44 @@ function include(theUrl, target, arr) {
         var offset = _target.getAttribute("jm-lazy") || 100;
         var wH = window.innerHeight;
         var ps = _target.getBoundingClientRect().top - wH - offset;
-        window.addEventListener("scroll", function vvv(e){
-            ps = _target.getBoundingClientRect().top - wH - offset;
-            if(ps <= 0){
-                window.removeEventListener("scroll", vvv);
+
+        function qwqw(targ, position, windowOffset, windowHeight){
+            if(position <= 0){
                 var xmlhttp = new XMLHttpRequest();
                 xmlhttp.onreadystatechange = function() {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 
-                        bob(_target, xmlhttp.responseText, url);
+                        bob(targ, xmlhttp.responseText, url);
 
                     }
                 }
                 xmlhttp.open("GET", url, true);
                 xmlhttp.send();
+            }else {
+
+
+                window.addEventListener("scroll", function vvv(e){
+                    newPS = targ.getBoundingClientRect().top - windowHeight - windowOffset;
+                    if(newPS <= 0){
+                        window.removeEventListener("scroll", vvv);
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onreadystatechange = function() {
+                            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+
+                                bob(targ, xmlhttp.responseText, url);
+
+                            }
+                        }
+                        xmlhttp.open("GET", url, true);
+                        xmlhttp.send();
+                    }
+                })
+
             }
-        })
+        }
+        qwqw(_target, ps, offset, wH);
     }else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
