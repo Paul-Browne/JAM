@@ -43,6 +43,8 @@ function include(theUrl, target, arr) {
 
     var _target = document.querySelector("script[jm-name="+target+"]:not(.accounted)");
 
+    //_target.removeAttribute("jm-name");
+
     _target.style.display = "block";
     _target.style.height = "20px";
 

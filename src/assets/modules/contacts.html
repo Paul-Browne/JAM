@@ -1,10 +1,13 @@
-{{~it.data :value:index}}
+{{~it.data :value:i}}
     <div>
         <h2>Hello {{=value.name}}!</h2>
         <p>from: {{=value.city}}</p>
         <p>Job: {{=value.job}}</p>
         <img class="thumbnail" src="{{=value.image}}" alt="{{=value.name}}">
     </div>
+
+    <script jm-name="lazy-{{=i}}" jm-lazy="200">include("/assets/modules/lazy", "lazy-{{=i}}");</script>
+
 {{~}}
 
 <style>
