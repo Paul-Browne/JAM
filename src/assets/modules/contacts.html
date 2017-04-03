@@ -1,0 +1,15 @@
+{{~it.data :value:index}}
+    <div>
+        <h2>Hello {{=value.name}}!</h2>
+        <p>from: {{=value.city}}</p>
+        <p>Job: {{=value.job}}</p>
+        <img class="thumbnail" src="{{=value.image}}" alt="{{=value.name}}">
+    </div>
+{{~}}
+
+<style>
+    img.thumbnail {
+        width: 150px;
+        vertical-align: middle;
+    }
+</style>

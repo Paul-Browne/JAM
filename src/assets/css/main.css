@@ -1,0 +1,154 @@
+/* additional normalize */
+
+q:after,
+q:before {
+    font-size: 1.15em
+}
+
+q:before {
+    content: '\201c'
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+    color: #43F
+}
+
+abbr[title] {
+    border-bottom: 1px dashed;
+    text-decoration: none
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+    width: 100%;
+    height: auto
+}
+
+q:after {
+    content: '\201d'
+}
+
+dd {
+    margin: 0 0 0 2.5em
+}
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 1.5em
+}
+
+ol ol {
+    list-style-type: lower-alpha
+}
+
+ol ol ol {
+    list-style-type: lower-roman
+}
+
+::-moz-selection,
+::selection {
+    background: #37F;
+    color: #fff;
+    text-shadow: none
+}
+
+th::-moz-selection,
+th::selection {
+    background: 0 0;
+    color: inherit
+}
+
+
+/*================
+  TYPOGRAPHY
+=================*/
+
+body {
+    font-size: 1.125em;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin: 0 0 0.5em;
+}
+
+h2 {
+    font-size: 2.3em;
+    margin: 0 0 0.6em;
+}
+
+h3 {
+    font-size: 1.7em;
+    margin: 0 0 0.7em;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 0 0 0.8em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+h5 {
+    font-size: 0.8em;
+    margin: 0 0 1em;
+}
+
+h6 {
+    font-size: 0.66em;
+    margin: 0 0 1em;
+}
+
+small {
+    font-size: 75%;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+a {
+    color: #43F;
+}
+
+a:visited {
+    color: #F43;
+}
+
+a.no-style {
+    color: inherit;
+}
+
+.some-selector {
+  color: red;
+  background: yellow;
+}
+
+.center-text {
+    text-align: center;
+}

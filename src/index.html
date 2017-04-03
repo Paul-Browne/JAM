@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <style>html{opacity: 0;transition: opacity .5s;}html.loaded {opacity: 1;}</style>
+    <script class="run_once" src="/assets/js/jxy.js"></script>
+    <script jm-name="meta">include("/assets/modules/meta", "meta");</script>
+
+    <title>Home Page</title>
+    <meta name="description" content="description for the home page">
+
+  </head>
+  <body>
+    <script jm-name="header">include("/assets/modules/header", "header", [675, 1280]);</script>
+    <script jm-name="contacts" jm-data="/assets/data/sample.json">include("/assets/modules/contacts", "contacts");</script>
+    <script jm-name="lazy2">include("/assets/modules/lazy2", "lazy2");</script>
+  </body>
+</html>
