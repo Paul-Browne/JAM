@@ -1,18 +1,106 @@
-{{~it.data :value:i}}
-    <div>
-        <h2>Hello {{=value.name}}!</h2>
-        <p>from: {{=value.city}}</p>
-        <p>Job: {{=value.job}}</p>
-        <img class="thumbnail" src="{{=value.image}}" alt="{{=value.name}}">
-    </div>
-
-    <script jm-name="lazy-{{=i}}" jm-lazy>include("/assets/modules/lazy", "lazy-{{=i}}");</script>
-
-{{~}}
-
 <style>
-    img.thumbnail {
+    .people--container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 1072px;
+        overflow: hidden;
+    }
+    .person {
         width: 150px;
-        vertical-align: middle;
+        height: 220px;
+        margin: 0.5rem;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+    }
+    .about--container {
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .about--container > *{
+        margin: 0;
+    }
+    .person {
+        transition: all 0.5s;
+    }
+    .person.js-hidden {
+
+        //animation: mymove 2s forwards;
+
+        //opacity: 0;
+        //width: 0;
+        //overflow: hidden;
+        //margin: 0.5rem 0;
+    }
+    .person.js-visible {
+        //opacity: 1;
+        //width: 150px;
+        //margin: 0.5rem;
+    }
+    @keyframes mymove {
+        from {order: inherit;}
+        to {order: 99;}
     }
 </style>
+
+<button class="js-sort" data-job-filter="ALL">EVERYONE</button>
+<button class="js-sort" data-job-filter="ADMIN">ADMIN</button>
+<button class="js-sort" data-job-filter="DESIGN">DESIGNERS</button>
+<button class="js-sort" data-job-filter="DEVELOPMENT">DEVELOPERS</button>
+<button class="js-sort" data-job-filter="CLIENT SERVICES">CLIENT SERVICES</button>
+<button class="js-sort" data-job-filter="STRATEGY">STRATERGY</button>
+
+<script>
+
+    var emps = document.querySelectorAll(".person");
+    emps.forEach(function(e){
+        e.style.order = e.getAttribute("data-order");
+    })
+
+    var sortButtons = document.querySelectorAll(".js-sort");
+    sortButtons.forEach(function(element){
+        element.addEventListener("click", function(e){
+            console.log(element);
+            var label = element.getAttribute("data-job-filter");
+            var employees = document.querySelectorAll(".person");
+            employees.forEach(function(el){
+                if(el.getAttribute("data-job") === label){
+
+                    el.classList.add("js-visible");
+                    el.classList.remove("js-hidden");
+
+                }else{
+
+                    var ord = el.style.order;
+                    var orig = el.getAttribute("data-order") +1;
+
+                    el.classList.remove("js-visible");
+                    el.classList.add("js-hidden");
+
+                }
+                if(label === "ALL"){
+
+                    el.classList.add("js-visible");
+                    el.classList.remove("js-hidden");
+
+                }
+            })
+        })
+    })
+</script>
+<section class="people--container">
+{{~it.data :value:i}}
+    <div data-order="{{=i}}" data-job="{{=value.job}}" class="person" style="background-image:url('{{=value.image}}');">
+        <div class="about--container">
+            <p>{{=value.job}}</p>
+            <h3>{{=value.name}}</h3>
+            <p>{{=value.tel}}</p>
+            <p>{{=value.email}}</p>
+        </div>
+    </div>
+{{~}}
+</section>

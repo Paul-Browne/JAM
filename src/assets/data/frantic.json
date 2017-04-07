@@ -1,0 +1,546 @@
+{"data":
+    [
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Janne Aalto",
+            "tel":   "+358 40 736 6412",
+            "email": "janne.aalto@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161112/Janne-Aalto.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Joni Aalto",
+            "tel":   "+358 40 900 2820",
+            "email": "joni.aalto@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161122/Joni-Aalto.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Liisa Benmergui",
+            "tel":   "+358 50 910 2743",
+            "email": "liisa.benmergui@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20161111114219/Liisa-Benmergui3.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Toni Bergholm",
+            "tel":   "+358 50 469 7290",
+            "email": "toni.bergholm@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161451/Toni-Bergholm.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Henri Block",
+            "tel":   "+358 40 522 2935",
+            "email": "henri.block@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161109/Henri-Block.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Paul Browne",
+            "tel":   "+358 44 974 5783",
+            "email": "paul.browne@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161343/Paul-Browne.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Onna Degerman",
+            "tel":   "+358 45 639 7100",
+            "email": "onna.degerman@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170322122638/Onna-Degerman.jpg"
+        },
+        {
+            "job":   "STRATEGY",
+            "name":  "Michael Dlugosch",
+            "tel":   "+358 40 861 9337",
+            "email": "michael.dlugosch@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161248/Michael-Dlugosch.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Panu Ervamaa",
+            "tel":   "+358 50 524 5990",
+            "email": "panu.ervamaa@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161338/Panu-Ervamaa.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Eija Gonzalez",
+            "tel":   "+358 40 570 7909",
+            "email": "eija.gonzalez@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161055/Eija-Gonzalez.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Teemu Hakoniemi",
+            "tel":   "+358 44 522 5270",
+            "email": "teemu.hakoniemi@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161443/Teemu-Hakoniemi.jpg"
+        },
+        {
+            "job":   "ADMIN",
+            "name":  "Aino Halonen",
+            "tel":   "+358 400 249 316",
+            "email": "aino.halonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161044/Aino-Halonen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Kalle Halonen",
+            "tel":   "+358 43 211 0947",
+            "email": "kalle.halonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161150/Kalle-Halonen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Joel Hautecoeur",
+            "tel":   "+358 50 531 4005",
+            "email": "joel.hautecoeur@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161119/Joel-Hautecoeur.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Marissa Heikel",
+            "tel":   "+358 50 495 0987",
+            "email": "marissa.heikel@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161233/Marissa-Heikel.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Taneli Heikkinen",
+            "tel":   "+358 50 468 8774",
+            "email": "taneli.heikkinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161439/Taneli-Heikkinen.jpg"
+        },
+        {
+            "job":   "ADMIN",
+            "name":  "Satu Heino",
+            "tel":   "+358 50 5119636",
+            "email": "satu.heino@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161422/Satu-Heino.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Ole Hiltunen",
+            "tel":   "+358 40 081 1903",
+            "email": "ole.hiltunen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161314/Ole-Hiltunen.jpg"
+        },
+        {
+            "job":   "STRATEGY",
+            "name":  "Laura Hinkkanen",
+            "tel":   "+358 50 397 3810",
+            "email": "laura.hinkkanen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161215/Laura-Hinkkanen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Joonas Hirn",
+            "tel":   "+358 40 763 4142",
+            "email": "joonas.hirn@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170403095425/Joonas-Hirn.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Tuuli Hirvonen",
+            "tel":   "+358 50 326 9176",
+            "email": "tuuli.hirvonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161500/Tuuli-Hirvonen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Miia Honkanen",
+            "tel":   "+358 50 369 5250",
+            "email": "miia.honkanen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161251/Miia-Honkanen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Essi Horppila",
+            "tel":   "+358 50 301 6320",
+            "email": "essi.horppila@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161101/Essi-Horppila.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Martti Hyvönen",
+            "tel":   "+358 50 428 1765",
+            "email": "martti.hyvonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161237/Martti-Hyvo%CC%88nen.jpg"
+        },
+        {
+            "job":   "STRATEGY",
+            "name":  "Sami Häkkinen",
+            "tel":   "+358 50 594 8184",
+            "email": "sami.hakkinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161408/Sami-Ha%CC%88kkinen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Sonja Jaakkola",
+            "tel":   "+358 50 380 4593",
+            "email": "sonja.jaakkola@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161430/Sonja-Jaakkola.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Piia Jalonen",
+            "tel":   "+358 40 750 3331",
+            "email": "piia.jalonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161347/Piia-Jalonen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Mikko Jämiä",
+            "tel":   "+358 40 526 8536",
+            "email": "mikko.jamia@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161300/Mikko-Ja%CC%88mia%CC%88.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Jutta Kalli",
+            "tel":   "+358 40 7189 414",
+            "email": "jutta.kalli@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161136/Jutta-Kalli.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Lauri Kallioniemi",
+            "tel":   "+358 40 703 6136",
+            "email": "lauri.kallioniemi@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161218/Lauri-Kallioniemi.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Linda Kankainen",
+            "tel":   "+358 50 409 8507",
+            "email": "linda.kankainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161226/Linda-Kankainen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Matti Kauppinen",
+            "tel":   "+358 45 673 1722",
+            "email": "matti.kauppinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161239/Matti-Kauppinen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Erica Kraappa",
+            "tel":   "+358 44 382 4104",
+            "email": "erica.kraappa@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161059/Erica-Kraappa.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Sammeli Kuisma",
+            "tel":   "+358 40 561 6135",
+            "email": "sammeli.kuisma@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161415/Sammeli-Kuisma.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Lasse Kulo",
+            "tel":   "+358 50 599 3210",
+            "email": "lasse.kulo@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161206/Lasse-Kulo.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Sami Kurvinen",
+            "tel":   "+358 40 719 3341",
+            "email": "sami.kurvinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161410/Sami-Kurvinen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Emma Laiho",
+            "tel":   "+358 50 367 6091",
+            "email": "emma.laiho@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161057/Emma-Laiho.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Mia Lavanti",
+            "tel":   "+358 50 491 6001",
+            "email": "mia.lavanti@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161246/Mia-Lavanti.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Harri Lehtisaari",
+            "tel":   "+358 50 363 5154",
+            "email": "harri.lehtisaari@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161107/Harri-Lehtisaari.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Jaakko Lehtonen",
+            "tel":   "+358 40 061 0197",
+            "email": "jaakko.lehtonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170322122634/Jaakko-Lehtonen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Oscar Lemström",
+            "tel":   "+358 400 342 782",
+            "email": "oscar.lemstrom@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161323/Oscar-Lemstro%CC%88m.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Kaisa Lepistö",
+            "tel":   "+358 50 573 8335",
+            "email": "kaisa.lepisto@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161141/Kaisa-Lepisto%CC%88.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Olli Leskinen",
+            "tel":   "+358 50 309 2515",
+            "email": "olli.leskinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161317/Olli-Leskinen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Niklas Lundqvist",
+            "tel":   "+358 50 588 3381",
+            "email": "niklas.lundqvist@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161312/Niklas-Lundqvist.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Tobias Martin",
+            "tel":   "+358 40 744 0770",
+            "email": "tobias.martin@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161448/Tobias-Martin.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Toni Mielonen",
+            "tel":   "+358 50 566 2815",
+            "email": "toni.mielonen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161454/Toni-Mielonen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Lasse Mäkinen",
+            "tel":   "+358 40 767 6393",
+            "email": "lasse.makinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161209/Lasse-Ma%CC%88kinen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Ahti Nurminen",
+            "tel":   "+358 40 099 8604",
+            "email": "ahti.nurminen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161042/Ahti-Nurminen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Sanna Nygård",
+            "tel":   "+358 40 848 4598",
+            "email": "sanna.nygard@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161420/Sanna-Nyga%CC%8Ard.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Oskari Okko Ojala",
+            "tel":   "+358 40 516 5000",
+            "email": "oskari.ojala@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161327/Oskari-Okko-Ojala.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Alexis Oksi",
+            "tel":   "+358 44 011 1760",
+            "email": "alexis.oksi@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161048/Alexis-Oksi.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Jere Orava",
+            "tel":   "+358 40 775 7231",
+            "email": "jere.orava@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170322122636/Jere-Orava.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Daniela Oria",
+            "tel":   "+358 50 483 7538",
+            "email": "daniela.oria@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161054/Daniela-Oria.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Alexander Ostrow",
+            "tel":   "+358 40 768 3147",
+            "email": "alexander.ostrow@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161046/Alexander-Ostrow.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Chris O’Hara",
+            "tel":   "+358 50 467 9929",
+            "email": "chris.ohara@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161051/Chris-OHara.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Kati Paavilainen",
+            "tel":   "+358 40 778 5502",
+            "email": "kati.paavilainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161154/Kati-Paavilainen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Roope Perttala",
+            "tel":   "+358 400 251 018",
+            "email": "roope.perttala@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161403/Roope-Perttala.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Sean Potts",
+            "tel":   "+358 50 462 4101",
+            "email": "sean.potts@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161426/Sean-Potts.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Mauri Pulkkinen",
+            "tel":   "+358 40 849 8769",
+            "email": "mauri.pulkkinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161243/Mauri-Pulkkinen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Mikael Pursiainen",
+            "tel":   "+358 40 726 3127",
+            "email": "mikael.pursiainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161256/Mikael-Pursiainen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Tytti Pöysti",
+            "tel":   "+358 40 544 4208",
+            "email": "tytti.poysti@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161503/Tytti-Po%CC%88ysti.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Josep Roca",
+            "tel":   "+358 50 552 5434",
+            "email": "josep.roca@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161125/Josep-Roca.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Taina Rouhiainen",
+            "tel":   "+358 40 548 3110",
+            "email": "taina.rouhiainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161436/Taina-Rouhiainen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Kaisa Ruotsalainen",
+            "tel":   "+358 40 648 4545",
+            "email": "kaisa.ruotsalainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161146/Kaisa-Ruotsalainen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Hannu Räisänen",
+            "tel":   "+358 50 486 1326",
+            "email": "hannu.raisanen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161103/Hannu-Ra%CC%88isa%CC%88nen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Samuli Saarikoski",
+            "tel":   "+358 44 264 5366",
+            "email": "samuli.saarikoski@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161418/Samuli-Saarikoski.jpg"
+        },
+        {
+            "job":   "ADMIN",
+            "name":  "Jenny Salmimäki",
+            "tel":   "+358 40 820 5155",
+            "email": "jenny.salmimaki@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161114/Jenny-Salmima%CC%88ki.jpg"
+        },
+        {
+            "job":   "STRATEGY",
+            "name":  "Kimmo Savolainen",
+            "tel":   "+358 40 353 4494",
+            "email": "kimmo.savolainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161203/Kimmo-Savolainen.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Mirva Savolainen",
+            "tel":   "+358 45 671 0789",
+            "email": "mirva.savolainen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161308/Mirva-Savolainen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Ilja Tuomivaara",
+            "tel":   "+358 40 416 5598",
+            "email": "ilja.tuomivaara@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161111/Ilja-Tuomivaara.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Timo Turkki",
+            "tel":   "+358 400 482 697",
+            "email": "timo.turkki@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161445/Timo-Turkki.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Maija Typpi-Häkkinen",
+            "tel":   "+358 50 566 2819",
+            "email": "maija.typpi-hakkinen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161230/Maija-Typpi-Ha%CC%88kkinen.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Mikko Vierikko",
+            "tel":   "+358 40 724 9774",
+            "email": "mikko.vierikko@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161304/Mikko-Vierikko.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Oskari Viilo",
+            "tel":   "+358 400 757 342",
+            "email": "oskari.viilo@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161333/Oskari-Viilo.jpg"
+        },
+        {
+            "job":   "CLIENT SERVICES",
+            "name":  "Katja Vilkamo",
+            "tel":   "+358 40 864 4620",
+            "email": "katja.vilkamo@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161158/Katja-Vilkamo.jpg"
+        },
+        {
+            "job":   "DESIGN",
+            "name":  "Pinja Virtanen",
+            "tel":   "+358 40 838 8297",
+            "email": "pinja.virtanen@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170118161352/Pinja-Virtanen.jpg"
+        },
+        {
+            "job":   "DEVELOPMENT",
+            "name":  "Wolf Wikgren",
+            "tel":   "+358 50 377 1788",
+            "email": "wolf.wikgren@frantic.com",
+            "image": "https://www.frantic.com/franticcom/uploads/20170322122650/Wolf-Wikgren.jpg"
+        }
+    ]
+}
+
+
+
