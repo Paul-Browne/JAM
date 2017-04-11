@@ -20,44 +20,57 @@ var del          = require('del');
 
 require('dotenv').config();
 
-var sslCrt, sslKey;
+var sslCrt = "";
+var sslKey = "";
 
 fs.open('./.env', 'r', (err) => {
-    if (err) {
-        if (err.code === 'ENOENT') {
-            console.log('.env file not found!!');
-            return;
+    if (err || sslCrt.length != 0) {
+        if (err.code === 'ENOENT' && sslCrt.length == 0 ) {
+            console.log('.env file not found \n this is used to serve localhost over https \n but isnt nessessary for development');
         }
-        throw err;
+        if (sslCrt.length != 0) {
+            console.log('It is better to put environment variables in a .env file');
+        }
     } else {
         fs.readFile('./.env', 'utf8', (err, data) => {
-            if(data.indexOf('SSL_CRT_PATH') < 0){
-                console.log("no 'SSL_CRT_PATH' found!!");
+            if( data.indexOf('SSL_CRT_PATH') < 0 || data.indexOf('SSL_KEY_PATH') < 0 || sslCrt.length != 0 ){
+                if(data.indexOf('SSL_CRT_PATH') < 0 ){
+                    console.log("no 'SSL_CRT_PATH' found in .env file");
+                }
+                if(data.indexOf('SSL_KEY_PATH') < 0 ){
+                    console.log("no 'SSL_KEY_PATH' found in .env file");
+                }
             } else {
-                sslCrt = process.env.SSL_CRT_PATH.toString();
-                sslKey = process.env.SSL_KEY_PATH.toString();
+                sslCrt = process.env.HOME + process.env.SSL_CRT_PATH.toString();
+                sslKey = process.env.HOME + process.env.SSL_KEY_PATH.toString();
             }
         })
     }
 });
 
-// https server with gzip and http2
+// https server with gzip and http2 (only if cert and key exist)
 
 gulp.task('https-server', function(){
 
-    var privateKey  = fs.readFileSync(sslKey, 'utf8');
-    var certificate = fs.readFileSync(sslCrt, 'utf8');
+    if(sslKey.length && sslCrt.length){
 
-    var credentials = {key: privateKey, cert: certificate};
-    var app = express();
-    app.use(compression())
-    app.use(serveStatic('./dist', {
-        'extensions': ['html'],
-        'maxAge': 3600000
-    }))
-    var httpsServer = http2.createServer(credentials, app);
-    httpsServer.listen(8889);
-    console.log("https://localhost:8889")
+        var privateKey  = fs.readFileSync(sslKey, 'utf8');
+        var certificate = fs.readFileSync(sslCrt, 'utf8');
+        var credentials = {key: privateKey, cert: certificate};
+
+        var app = express();
+        app.use(compression())
+        app.use(serveStatic('./dist', {
+            'extensions': ['html'],
+            'maxAge': 3600000
+        }))
+        var httpsServer = http2.createServer(credentials, app);
+        httpsServer.listen(8889);
+        console.log("https://localhost:8889")
+
+    } else {
+        console.log("https://localhost only available when cert and keys are found");
+    }
 })
 
 // http server with gzip
@@ -152,9 +165,9 @@ gulp.task('default', function(callback) {
   runSequence(
     'build',
     'watch',
+    'debug-server',
     'http-server',
     'https-server',
-    'debug-server',
     callback
   )
 })

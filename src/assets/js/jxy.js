@@ -46,7 +46,7 @@ function include(theUrl, target, arr) {
     //_target.removeAttribute("jm-name");
 
     _target.style.display = "block";
-    _target.style.height = "20px";
+    _target.style.height = "100vh";
 
     if(_target.hasAttribute("jm-lazy")){
         var offset = _target.getAttribute("jm-lazy") || 100;
@@ -90,6 +90,7 @@ function include(theUrl, target, arr) {
             }
         }
         qwqw(_target, ps, offset, wH);
+        // _target.style.height = "1px";
     }else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
@@ -133,25 +134,32 @@ function bob(outer, res, lru){
     if(outer.hasAttribute("jm-data") ){
 
         var jsonData = outer.getAttribute("jm-data");
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                var dotted = doT.template(res);
-                res = dotted(JSON.parse(xmlhttp.responseText));
+        if(jsonData.indexOf("{") !=-1){
+            var dotted = doT.template(res);
+            res = dotted(JSON.parse(jsonData));
+            scriptCheck();
+            outer.outerHTML = res;
+            scriptAdd(lru);
+            debounceClassName();
+        }else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var dotted = doT.template(res);
+                    res = dotted(JSON.parse(xmlhttp.responseText));
 
-                scriptCheck();
-                outer.outerHTML = res;
-                scriptAdd(lru);
+                    scriptCheck();
+                    outer.outerHTML = res;
+                    scriptAdd(lru);
 
 
-                debounceClassName();
+                    debounceClassName();
 
+                }
             }
+            xmlhttp.open("GET", jsonData, true);
+            xmlhttp.send();
         }
-        xmlhttp.open("GET", jsonData, true);
-        xmlhttp.send();
-
-
     }else{
 
         scriptCheck();

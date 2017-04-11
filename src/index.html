@@ -10,9 +10,32 @@
 
   </head>
   <body>
-    <script jm-name="lazy" jm-lazy="300">include("/assets/modules/lazy", "lazy");</script>
-    <script jm-name="header">include("/assets/modules/header", "header", [675, 1280]);</script>
-    <script jm-name="contacts" jm-data="/assets/data/frantic.json">include("/assets/modules/contacts", "contacts");</script>
-    <script jm-name="lazy2">include("/assets/modules/lazy2", "lazy2");</script>
+    <script jm-name="header">include("/assets/modules/header/header", "header", [675, 1280]);</script>
+<!--     <script jm-name="contacts" jm-data="/assets/data/frantic.json">include("/assets/modules/contacts", "contacts");</script>
+ -->    <!-- <script jm-name="lazy2">include("/assets/modules/lazy2", "lazy2");</script> -->
+
+<!--     <script jm-name="posts" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=1">include("/assets/modules/posts", "posts");</script>
+
+    <script jm-name="posts2" jm-lazy="200" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=10&offset=1">include("/assets/modules/posts", "posts2");</script>
+
+    <script jm-name="posts3" jm-lazy="200" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=10&offset=11">include("/assets/modules/posts", "posts3");</script>
+
+    <script jm-name="posts4" jm-lazy="200" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=10&offset=21">include("/assets/modules/posts", "posts4");</script>
+
+    <script jm-name="posts5" jm-lazy="200" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=10&offset=31">include("/assets/modules/posts", "posts5");</script> -->
+
+    <!-- <script jm-name="posts" jm-data="/assets/data/arr.json">include("/assets/modules/posts-exp", "posts");</script> -->
+
+    <script jm-name="posts" jm-data='{"arr":[1,2,3,4,5,6,7,8,9,10]}'>include("/assets/modules/posts-exp", "posts");</script>
+
+    <!--
+
+        jm-name
+        jm-lazy
+        jm-data
+        include(path, name, [sizes]);
+
+    -->
+
   </body>
 </html>
