@@ -124,22 +124,20 @@ gulp.task('minify-uglify-optimize', function() {
 // purify global css against all html and js
 
 gulp.task('purify-css', function() {
-  return gulp.src('dist/css/*.css')
+  return gulp.src('dist/assets/css/*.css')
     .pipe(purify(['dist/**/*.js', 'dist/**/*.html']))
     .pipe(cssnano())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/assets/css'))
 })
 
 // Cleaning
 
 gulp.task('clean', function() {
-  return del.sync('dist').then(function(cb) {
-    return cache.clearAll(cb);
-  });
+  return del.sync('dist');
 })
 
 gulp.task('clean:dist', function() {
-  return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+  return del.sync(['dist/**/*', '!dist/assets/images', '!dist/assets/images/**/*']);
 });
 
 // Build

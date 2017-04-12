@@ -46,6 +46,7 @@ function include(theUrl, target, arr) {
     //_target.removeAttribute("jm-name");
 
     _target.style.display = "block";
+    _target.style.color = "transparent";
     _target.style.height = "100vh";
 
     if(_target.hasAttribute("jm-lazy")){
@@ -90,7 +91,6 @@ function include(theUrl, target, arr) {
             }
         }
         qwqw(_target, ps, offset, wH);
-        // _target.style.height = "1px";
     }else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {

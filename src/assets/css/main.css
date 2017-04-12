@@ -1,5 +1,11 @@
 /* additional normalize */
 
+script[jm-lazy]:before {
+    color: #000;
+    content: "loading...";
+}
+
+
 q:after,
 q:before {
     font-size: 1.15em
