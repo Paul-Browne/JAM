@@ -28,50 +28,22 @@
 .about--container > *{
     margin: 0;
     overflow: hidden;
-    font-size: 8px;
+    font-size: 12px;
 }
 .person.js-hidden {
     width: 0;
     margin: 0.5rem 0;
-    opacity: 0;
-/*    animation-name: hidePeople;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;*/
 }
 .person.js-visible {
     width: 252px;
     margin: 0.5rem;
-/*    animation-name: showPeople;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;*/
 }
 .js-visible.js-even{
     transform: translateY(1rem);
 }
 
-/*@keyframes hidePeople {
-    0    {transform: scaleX(1); width: 252px; margin: 0.5rem; }
-    50%  {transform: scaleX(0); width: 252px; margin: 0.5rem; }
-    100% {transform: scaleX(0); width: 0; margin: 0.5rem 0; }
-}
-
-@keyframes showPeople {
-    0    {transform: scaleX(0); width: 0; margin: 0.5rem 0;}
-    50%  {transform: scaleX(0); width: 252px; margin: 0.5rem;}
-    100% {transform: scaleX(1); width: 252px; margin: 0.5rem;}
-}*/
-/*
-@keyframes hidePeople {
-    0    {width: 252px; margin: 0.5rem; }
-    100% {width: 0; margin: 0.5rem 0; }
-}
-
-@keyframes showPeople {
-    0    {width: 0; margin: 0.5rem 0;}
-    100% {width: 252px; margin: 0.5rem;}
-}
-*/
 </style>
+
 
 <button class="js-sort" data-job-filter="ALL">EVERYONE</button>
 <button class="js-sort" data-job-filter="ADMIN">ADMIN</button>
@@ -79,6 +51,20 @@
 <button class="js-sort" data-job-filter="DEVELOPMENT">DEVELOPERS</button>
 <button class="js-sort" data-job-filter="CLIENT SERVICES">CLIENT SERVICES</button>
 <button class="js-sort" data-job-filter="STRATEGY">STRATERGY</button>
+
+<section class="people--container">
+{{~it.data :value:i}}
+    <div data-order="{{=i}}" data-job="{{=value.job}}" class="person js-visible" style="background-image:url('{{=value.image}}');">
+        <div class="about--container">
+            <p>{{=value.job}}</p>
+            <h3>{{=value.name}}</h3>
+            <p>{{=value.tel}}</p>
+            <p>{{=value.email}}</p>
+        </div>
+    </div>
+{{~}}
+</section>
+
 
 <script>
 
@@ -97,7 +83,6 @@ sortButtons.forEach(function(element){
                 el.classList.remove("js-even");
                 el.classList.remove("js-odd");
             if(el.getAttribute("data-job") === label || label === "ALL"){
-                //el.style.order = index;
                 el.classList.add("js-visible");
                 el.classList.remove("js-hidden");
                 if(isEven(index)){
@@ -114,15 +99,3 @@ sortButtons.forEach(function(element){
     })
 })
 </script>
-<section class="people--container">
-{{~it.data :value:i}}
-    <div data-order="{{=i}}" data-job="{{=value.job}}" class="person js-visible" style="background-image:url('{{=value.image}}');">
-        <div class="about--container">
-            <p>{{=value.job}}</p>
-            <h3>{{=value.name}}</h3>
-            <p>{{=value.tel}}</p>
-            <p>{{=value.email}}</p>
-        </div>
-    </div>
-{{~}}
-</section>
