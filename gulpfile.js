@@ -61,7 +61,7 @@ gulp.task('https-server', function(){
         var app = express();
         app.use(compression())
         app.use(serveStatic('./dist', {
-            'extensions': ['html'],
+            //'extensions': ['html'],
             'maxAge': 3600000
         }))
         var httpsServer = http2.createServer(credentials, app);

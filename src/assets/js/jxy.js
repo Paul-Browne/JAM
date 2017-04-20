@@ -30,7 +30,8 @@ function include(theUrl, target, arr) {
     }
     while (i < j) {
         if (wW > arr[i]) {
-            url = _url + "." + arr[i] + ".html";
+            //url = _url + "." + arr[i] + ".html";
+            url = url.substr(0, url.length - 4) + arr[i] + ".html";
         }
         i++;
     }
