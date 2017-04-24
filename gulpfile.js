@@ -18,6 +18,8 @@ var serveStatic  = require('serve-static');
 var runSequence  = require('run-sequence');
 var del          = require('del');
 
+var prettify     = require('gulp-jsbeautifier');
+
 require('dotenv').config();
 
 var sslCrt = "";
@@ -121,6 +123,14 @@ gulp.task('minify-uglify-optimize', function() {
     .pipe(gulp.dest('dist'))
 })
 
+// beautify css, html, js
+
+gulp.task('prettify', function() {
+  gulp.src('src/**/*.+(html|css|js)')
+    .pipe(prettify())
+    .pipe(gulp.dest('src'));
+});
+
 // purify global css against all html and js
 
 gulp.task('purify-css', function() {
@@ -145,6 +155,7 @@ gulp.task('clean:dist', function() {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
+    'prettify',
     'minify-uglify-optimize',
     'purify-css',
     callback

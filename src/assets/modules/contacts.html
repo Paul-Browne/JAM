@@ -1,47 +1,51 @@
 <style>
+    .people--container {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 1072px;
+        overflow: hidden;
+    }
 
-.people--container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 1072px;
-    overflow: hidden;
-}
-.person {
-    transition-duration: 1s;
-    transition-property: all;
-    width: 252px;
-    height: 386px;
-    margin: 0.5rem;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-}
-.about--container {
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.about--container > *{
-    margin: 0;
-    overflow: hidden;
-    font-size: 12px;
-}
-.person.js-hidden {
-    width: 0;
-    margin: 0.5rem 0;
-}
-.person.js-visible {
-    width: 252px;
-    margin: 0.5rem;
-}
-.js-visible.js-even{
-    transform: translateY(1rem);
-}
+    .person {
+        transition-duration: 1s;
+        transition-property: all;
+        width: 252px;
+        height: 386px;
+        margin: 0.5rem;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+    }
 
+    .about--container {
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .about--container>* {
+        margin: 0;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .person.js-hidden {
+        width: 0;
+        margin: 0.5rem 0;
+    }
+
+    .person.js-visible {
+        width: 252px;
+        margin: 0.5rem;
+    }
+
+    .js-visible.js-even {
+        transform: translateY(1rem);
+    }
 </style>
 
 
@@ -53,7 +57,7 @@
 <button class="js-sort" data-job-filter="STRATEGY">STRATERGY</button>
 
 <section class="people--container">
-{{~it.data :value:i}}
+    {{~it.data :value:i}}
     <div data-order="{{=i}}" data-job="{{=value.job}}" class="person js-visible" style="background-image:url('{{=value.image}}');">
         <div class="about--container">
             <p>{{=value.job}}</p>
@@ -62,40 +66,39 @@
             <p>{{=value.email}}</p>
         </div>
     </div>
-{{~}}
+    {{~}}
 </section>
 
 
 <script>
+    function isEven(n) {
+        return n % 2 == 0;
+    }
 
-function isEven(n) {
-   return n % 2 == 0;
-}
-
-var sortButtons = document.querySelectorAll(".js-sort");
-sortButtons.forEach(function(element){
-    element.addEventListener("click", function(e){
-        console.log(element);
-        var label = element.getAttribute("data-job-filter");
-        var employees = document.querySelectorAll(".person");
-        var index = 1;
-        employees.forEach(function(el){
+    var sortButtons = document.querySelectorAll(".js-sort");
+    sortButtons.forEach(function(element) {
+        element.addEventListener("click", function(e) {
+            console.log(element);
+            var label = element.getAttribute("data-job-filter");
+            var employees = document.querySelectorAll(".person");
+            var index = 1;
+            employees.forEach(function(el) {
                 el.classList.remove("js-even");
                 el.classList.remove("js-odd");
-            if(el.getAttribute("data-job") === label || label === "ALL"){
-                el.classList.add("js-visible");
-                el.classList.remove("js-hidden");
-                if(isEven(index)){
-                    el.classList.add("js-even");
-                }else {
-                    el.classList.add("js-odd");
+                if (el.getAttribute("data-job") === label || label === "ALL") {
+                    el.classList.add("js-visible");
+                    el.classList.remove("js-hidden");
+                    if (isEven(index)) {
+                        el.classList.add("js-even");
+                    } else {
+                        el.classList.add("js-odd");
+                    }
+                    index++;
+                } else {
+                    el.classList.add("js-hidden");
+                    el.classList.remove("js-visible");
                 }
-                index++;
-            }else{
-                el.classList.add("js-hidden");
-                el.classList.remove("js-visible");
-            }
+            })
         })
     })
-})
 </script>

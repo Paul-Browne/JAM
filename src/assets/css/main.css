@@ -5,7 +5,6 @@ script[jm-lazy]:before {
     content: "loading...";
 }
 
-
 q:after,
 q:before {
     font-size: 1.15em
@@ -151,10 +150,22 @@ a.no-style {
 }
 
 .some-selector {
-  color: red;
-  background: yellow;
+    color: red;
+    background: yellow;
 }
 
 .center-text {
     text-align: center;
+}
+
+.screen-reader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

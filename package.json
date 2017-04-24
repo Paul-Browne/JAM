@@ -19,9 +19,11 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^2.3.0",
+    "gulp-jsbeautifier": "^2.1.0",
     "gulp-purifycss": "^0.2.0",
     "gulp-uglify": "^1.2.0",
     "gulp-useref": "^3.0.4",
+    "js-beautify": "^1.6.12",
     "run-sequence": "^1.1.2",
     "serve-static": "^1.12.1",
     "spdy": "^3.4.4"

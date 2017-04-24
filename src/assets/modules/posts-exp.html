@@ -1,3 +1,5 @@
 {{~it.arr :value:i}}
-    <script jm-name="pst-{{=i}}" jm-lazy="-100" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=1&offset={{=i}}">include("/assets/modules/posts.html", "pst-{{=i}}");</script>
+<script jm-name="pst-{{=i}}" jm-lazy="-100" jm-data="https://www.frantic.com/wp-json/wp/v2/posts?per_page=1&offset={{=i}}">
+    include("/assets/modules/posts.html", "pst-{{=i}}");
+</script>
 {{~}}

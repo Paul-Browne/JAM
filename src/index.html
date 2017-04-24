@@ -1,17 +1,34 @@
 <!doctype html>
 <html lang="">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>html{opacity: 0;transition: opacity .5s;}html.loaded {opacity: 1;}</style>
+    <style>
+        html {
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        html.loaded {
+            opacity: 1;
+        }
+    </style>
     <script class="run_once" src="/assets/js/jxy.js"></script>
-    <script jm-name="meta">include("/assets/modules/meta.html", "meta");</script>
+    <script jm-name="meta">
+        include("/assets/modules/meta.html", "meta");
+    </script>
 
     <title>Home Page</title>
-    <script jm-name="meta-test">include("/assets/modules/meta-test.html", "meta-test");</script>
+    <script jm-name="meta-test">
+        include("/assets/modules/meta-test.html", "meta-test");
+    </script>
 
-  </head>
-  <body>
-    <script jm-name="header">include("/assets/modules/header/header.html", "header", [675, 1280]);</script>
+</head>
+
+<body>
+    <script jm-name="header">
+        include("/assets/modules/header/header.html", "header", [675, 1280]);
+    </script>
 
 
     <!--
@@ -24,5 +41,10 @@
 
     -->
 
-  </body>
+    <script jm-name="footer">
+        include("/assets/modules/footer.html", "footer");
+    </script>
+
+</body>
+
 </html>
